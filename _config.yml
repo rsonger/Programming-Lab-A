@@ -17,8 +17,8 @@ title: Programming Lab A
 email: rsonger@neptune.kanazawa-it.ac.jp
 description: >- # this means to ignore newlines until "baseurl:"
   Reference material for Programming Lab A at ICT
-baseurl: "/Programming-Lab-A" # the subpath of your site, e.g. /blog
-url: "https://rsonger.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://rsonger.github.io/Programming-Lab-A" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rsonger
 
 # Build settings
