@@ -23,7 +23,7 @@ github_username:  rsonger
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
