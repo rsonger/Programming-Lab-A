@@ -14,19 +14,97 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Programming Lab A
+subtitle: "Academic Year 2022"
+logo: "/assets/images/ict_logo.png"
+name: "Robert Songer"
+email: rsonger@neptune.kanazawa-it.ac.jp
 description: >- # this means to ignore newlines until "baseurl:"
-  Reference material for Programming Lab A at ICT
-baseurl: "/Programming-Lab-A" # the subpath of the site
-url: "https://rsonger.github.io/Programming-Lab-A" # the base hostname & protocol for your site, e.g. http://example.com
+  Course material for Programming Lab A in the Science and
+  Technology Department at International College of Technology, Kanazawa.
 
 github_username:  rsonger
+minimal_mistakes_skin: default
+search: true
+locale: "en-US"
+repository: rsonger/Programming-Lab-A
+github: [metadata]
+
+url: "https://rsonger.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Programming-Lab-A" # the subpath of the site
+last_updated: true
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+kramdown:
+  math_engine: katex
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+timezone: "Asia/Tokyo" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate: 5
+paginate_path: /page:num/
+
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-sitemap
+  # - jekyll-feed
+
+include: 
+  - _pages
+
+author:
+  name   : "Robert Songer"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Associate Professor teaching programming, web development, and software engineering at International College of Technology (ICT), Kanazawa."
+  location: "Kanazawa, Japan"
+  links:
+    - 
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://robsonger.dev"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rsonger"
+    - label: "ICT Home"
+      icon: "fa fa-fw fa-school"
+      url: "https://www.ict-kanazawa.ac.jp/"
+
+atom_feed:
+  hide: true
+
+footer:
+  links:
+    - label: "ICT Home"
+      icon: "fa fa-fw fa-school"
+      url: "https://www.ict-kanazawa.ac.jp/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rsonger/Programming-Lab-A"
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: false
+      toc: true
+      toc_sticky: true
+
+words_per_minute: 150
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
