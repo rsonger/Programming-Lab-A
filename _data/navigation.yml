@@ -1,0 +1,5 @@
+main:
+  - title: Top
+    url: /
+  - title: Getting Started
+    url: /getting-started/

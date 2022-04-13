@@ -96,6 +96,18 @@ defaults:
       comments: false
       share: false
       related: false
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: false
       toc: true
       toc_sticky: true
 
